@@ -37,7 +37,7 @@ export default function Article() {
     <div className='article'>
       <div className='flex flex-col'>
         <span className='text-5xl text-black font-semibold flex px-24 '>
-          Nos évènement et film du moments
+          Nos évènements et films du moment
         </span>
         <div className='px-24 py-5'>
           <p className='text-2xl text-gray-700'>
