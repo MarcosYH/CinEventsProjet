@@ -50,7 +50,7 @@ export default function Footer() {
                     <div className="text-center md:text-left py-10">
                         <h3 className="text-lg font-bold">Contacter nous</h3>
 
-                        <p className="text-lg font-medium py-4">
+                        <div className="text-lg font-medium py-4">
                             <img
                                 src={socialmedia2}
                                 alt='socialmedia'
@@ -62,7 +62,7 @@ export default function Footer() {
                             <a href='/location'>Cotonou-Bénin</a> 
                             </div>
 
-                        </p>
+                        </div>
 
                     </div>
                 </div>

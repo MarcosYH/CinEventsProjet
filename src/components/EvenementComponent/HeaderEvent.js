@@ -5,6 +5,8 @@ import ImgEvent3 from '../../assets/ImageEvent3.png'
 import EventFont from '../../assets/EventFont.png'
 import productsData from "../datas/Enventsdata";
 import Footer from '../LandingComponents/Footer';
+import { Link } from 'react-router-dom';
+
 export default function HeaderEvent() {
     return (
         <>
@@ -91,9 +93,13 @@ export default function HeaderEvent() {
             <p className="text-black font-bold text-xl">Date: <span className=' text-lg font-semibold '>{product.date}</span> </p>
             <p className="text-black font-bold text-xl">Lieu: <span className=' text-lg font-semibold '>{product.lieu}</span> </p>
             <p className="text-black font-bold text-xl">Tickets disponible :    <span className=' text-lg font-semibold '>{product.nombreTickets}</span></p>
-            <button className=" bg-red-700 hover:bg-red-900 rounded-lg text-white text-xl font-bold py-2 px-4 mt-auto">
+            <Link to={`/reserver/${product.id}`}>
+            <button
+             className=" bg-red-700 hover:bg-red-900 rounded-lg text-white text-xl font-bold py-2 px-4 mt-auto"
+             >
               Réserver
             </button>
+            </Link>
           </div>
         ))}
       </div>

@@ -8,6 +8,7 @@ import Landingpage from "./Landingpage";
 import Register from "./Authpages/Register";
 import Pagestart from "./Authpages/Pagestart";
 import Login from "./Authpages/Login";
+import Bookingpage from "./BookingEvents";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/Login" element={<Login/>} />
         <Route path="/Register" element={<Register/>}/>
         <Route path="*" element={<Error/>}/>
+        <Route path="/reserver/:productId" element={<Bookingpage/>} />
     </Routes>
 </Router>
 
