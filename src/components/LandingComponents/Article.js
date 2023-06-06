@@ -9,6 +9,7 @@ import Art4 from '../../assets/Art4.png';
 import Art5 from '../../assets/Art5.png';
 import Art6 from '../../assets/Art6.png';
 import Art7 from '../../assets/Art7.png';
+import { Link } from 'react-router-dom';
 
 const breakPoints = [
   { width: 1, itemsToShow: 1 },
@@ -74,7 +75,9 @@ export default function Article() {
           className={isMobile ? 'px-2' : 'px-40'}
           ref={carouselRef}
         >
+          <Link to="/reserver/4">
           <img className='w-80 h-auto' src={Art1} alt='Art1' />
+          </Link>
           <img className='w-80 h-auto' src={Art2} alt='Art2' />
           <img className='w-80 h-auto' src={Art3} alt='Art3' />
           <img className='w-80 h-auto' src={Art4} alt='Art4' />

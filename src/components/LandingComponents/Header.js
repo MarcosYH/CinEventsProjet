@@ -2,6 +2,7 @@ import React from 'react'
 import Imgheader from '../../assets/Imgheader5.png'
 import Fondheader from '../../assets/Fondheader5.png'
 import '../../styles/Header.css'
+import { Link } from 'react-router-dom';
 function Header() {
     const headerStyle = {
         backgroundImage: `url(${Fondheader})`,
@@ -16,9 +17,12 @@ function Header() {
                         Vivez une expérience de salle unique...<br/> Assurez-vous dès à présent une place !
                     </p>
                     <div className=" py-7">
+                        <Link to="/Evenement">
                         <button className=" bg-red-800 hover:bg-red-900 rounded-lg text-white text-xl font-bold py-2 px-4 mt-6">
                             Réserver
                         </button>
+                        </Link>
+                        
                     </div>
                 </div>
                 <div className=" rounded-md ">
